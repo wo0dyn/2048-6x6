@@ -62,7 +62,7 @@ GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     //var value = Math.random() < 0.9 ? 2 : 4;
     var value = 2;
-    while (value < this.largest && Math.random() < 1/3) {
+    while (value < this.largest && Math.random() < 1/4) {
       value = value * 2;
     }
     
@@ -149,7 +149,7 @@ GameManager.prototype.move = function (direction) {
           }
 
           // The mighty 16384 tile
-          if (merged.value === 16384) self.won = true;
+          //if (merged.value === 16384) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
