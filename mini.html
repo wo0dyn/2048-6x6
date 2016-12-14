@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Yet Another 2048 Variant</title>
+  <title>2048 6x6</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -16,11 +16,14 @@
 <body>
   <div class="container">
     <div class="heading">
+      <h1 class="title">2048 6x6</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
+    <p class="game-intro">Join the numbers and get to the 2048 tile on a 6x6 board!</p>
+
     <div class="game-container">
       <div class="game-message">
         <p></p>
@@ -85,6 +88,16 @@
 
       </div>
     </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This is a clone of <a href="http://gabrielecirulli.github.io/2048/">2048</a>, and is most likely easier. You may want to try and do the original 2048 if this is too easy.
+    </p>
+  </div>
+
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
